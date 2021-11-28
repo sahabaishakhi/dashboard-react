@@ -1,0 +1,28 @@
+export default Unitsystems = {
+  default: {
+    efficiency: "%",
+    relhum: "%",
+    stdvolumeflow: "Nm3/h",
+    temperature: "C",
+    pressure: "bara",
+    power: "kW",
+    angle: "deg",
+    speed: "rpm",
+    viscosity: "μPa*s",
+    position: "%",
+  },
+  us: {
+    efficiency: "%",
+    relhum: "%",
+    stdvolumeflow: "SCFM60",
+    temperature: "F",
+    pressure: "psi",
+    power: "hp",
+    angle: "deg",
+    speed: "rpm",
+    viscosity: "μPa*s",
+    volumeflow: "ft/min",
+    massflow: "lb/h",
+    length: "in",
+  },
+};

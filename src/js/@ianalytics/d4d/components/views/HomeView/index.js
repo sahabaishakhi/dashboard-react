@@ -1,0 +1,13 @@
+import React from "react";
+import SimpleMap from "../../Map/SimpleMap/index";
+
+const HomeView = props => {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "view-container"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "view-header"
+  }, props.header), props.main);
+};
+
+export default HomeView;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL2pzeC9AaWFuYWx5dGljcy9kNGQvY29tcG9uZW50cy92aWV3cy9Ib21lVmlldy9pbmRleC5qc3giXSwibmFtZXMiOlsiUmVhY3QiLCJTaW1wbGVNYXAiLCJIb21lVmlldyIsInByb3BzIiwiaGVhZGVyIiwibWFpbiJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBT0EsS0FBUCxNQUFrQixPQUFsQjtBQUNBLE9BQU9DLFNBQVAsTUFBc0IsMkJBQXRCOztBQUVBLE1BQU1DLFFBQVEsR0FBSUMsS0FBRCxJQUFXO0FBQzFCLHNCQUNFO0FBQUssSUFBQSxTQUFTLEVBQUM7QUFBZixrQkFDRTtBQUFLLElBQUEsU0FBUyxFQUFDO0FBQWYsS0FBOEJBLEtBQUssQ0FBQ0MsTUFBcEMsQ0FERixFQUVHRCxLQUFLLENBQUNFLElBRlQsQ0FERjtBQU1ELENBUEQ7O0FBU0EsZUFBZUgsUUFBZiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IFNpbXBsZU1hcCBmcm9tIFwiLi4vLi4vTWFwL1NpbXBsZU1hcC9pbmRleFwiO1xyXG5cclxuY29uc3QgSG9tZVZpZXcgPSAocHJvcHMpID0+IHtcclxuICByZXR1cm4gKFxyXG4gICAgPGRpdiBjbGFzc05hbWU9XCJ2aWV3LWNvbnRhaW5lclwiPlxyXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInZpZXctaGVhZGVyXCI+e3Byb3BzLmhlYWRlcn08L2Rpdj5cclxuICAgICAge3Byb3BzLm1haW59XHJcbiAgICA8L2Rpdj5cclxuICApO1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgSG9tZVZpZXc7XHJcbiJdfQ==

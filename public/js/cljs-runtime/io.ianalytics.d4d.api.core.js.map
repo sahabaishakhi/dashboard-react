@@ -1,0 +1,1 @@
+{"version":3,"sources":["io/ianalytics/d4d/api/core.cljs"],"mappings":";AAEA,qCAAA,rCAAKA","names":["io.ianalytics.d4d.api.core/API_URL"],"sourcesContent":["(ns io.ianalytics.d4d.api.core)\r\n\r\n(def API_URL \"https://dash.ianalytics.io\")\r\n\r\n"]}

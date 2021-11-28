@@ -1,0 +1,23 @@
+import React from "react";
+
+const Logo = props => {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: props.width,
+      height: props.height
+    }
+  }, props.theme === "dark" ? /*#__PURE__*/React.createElement("img", {
+    src: "/lib/logo.svg",
+    alt: "Industrial Analytics Logo",
+    style: {
+      width: props.width,
+      height: props.height
+    }
+  }) : /*#__PURE__*/React.createElement("img", {
+    src: "/lib/l.svg",
+    alt: "Industrial Analytics Logo"
+  }));
+};
+
+export default Logo;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL2pzeC9AaWFuYWx5dGljcy9kNGQvY29tcG9uZW50cy9saWIvbG9nby9Mb2dvLmpzeCJdLCJuYW1lcyI6WyJSZWFjdCIsIkxvZ28iLCJwcm9wcyIsIndpZHRoIiwiaGVpZ2h0IiwidGhlbWUiXSwibWFwcGluZ3MiOiJBQUFBLE9BQU9BLEtBQVAsTUFBa0IsT0FBbEI7O0FBRUEsTUFBTUMsSUFBSSxHQUFJQyxLQUFELElBQVc7QUFDdEIsc0JBQ0U7QUFBSyxJQUFBLEtBQUssRUFBRTtBQUFFQyxNQUFBQSxLQUFLLEVBQUVELEtBQUssQ0FBQ0MsS0FBZjtBQUFzQkMsTUFBQUEsTUFBTSxFQUFFRixLQUFLLENBQUNFO0FBQXBDO0FBQVosS0FDR0YsS0FBSyxDQUFDRyxLQUFOLEtBQWdCLE1BQWhCLGdCQUNDO0FBQ0UsSUFBQSxHQUFHLEVBQUUsZUFEUDtBQUVFLElBQUEsR0FBRyxFQUFDLDJCQUZOO0FBR0UsSUFBQSxLQUFLLEVBQUU7QUFBRUYsTUFBQUEsS0FBSyxFQUFFRCxLQUFLLENBQUNDLEtBQWY7QUFBc0JDLE1BQUFBLE1BQU0sRUFBRUYsS0FBSyxDQUFDRTtBQUFwQztBQUhULElBREQsZ0JBT0M7QUFBSyxJQUFBLEdBQUcsRUFBRSxZQUFWO0FBQXdCLElBQUEsR0FBRyxFQUFDO0FBQTVCLElBUkosQ0FERjtBQWFELENBZEQ7O0FBZ0JBLGVBQWVILElBQWYiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XHJcblxyXG5jb25zdCBMb2dvID0gKHByb3BzKSA9PiB7XHJcbiAgcmV0dXJuIChcclxuICAgIDxkaXYgc3R5bGU9e3sgd2lkdGg6IHByb3BzLndpZHRoLCBoZWlnaHQ6IHByb3BzLmhlaWdodCB9fT5cclxuICAgICAge3Byb3BzLnRoZW1lID09PSBcImRhcmtcIiA/IChcclxuICAgICAgICA8aW1nXHJcbiAgICAgICAgICBzcmM9e1wiL2xpYi9sb2dvLnN2Z1wifVxyXG4gICAgICAgICAgYWx0PVwiSW5kdXN0cmlhbCBBbmFseXRpY3MgTG9nb1wiXHJcbiAgICAgICAgICBzdHlsZT17eyB3aWR0aDogcHJvcHMud2lkdGgsIGhlaWdodDogcHJvcHMuaGVpZ2h0IH19XHJcbiAgICAgICAgLz5cclxuICAgICAgKSA6IChcclxuICAgICAgICA8aW1nIHNyYz17XCIvbGliL2wuc3ZnXCJ9IGFsdD1cIkluZHVzdHJpYWwgQW5hbHl0aWNzIExvZ29cIiAvPlxyXG4gICAgICApfVxyXG4gICAgPC9kaXY+XHJcbiAgKTtcclxufTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IExvZ287XHJcbiJdfQ==

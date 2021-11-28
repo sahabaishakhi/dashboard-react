@@ -1,0 +1,19 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/cljs"
+  "src/js"]
+
+ :dependencies
+ [[cljsjs/react "17.0.2-0"]
+  [cljsjs/react-dom "17.0.2-0"]]
+
+ :dev-http {9501 "public"}
+ :http     {:port 9502}
+ 
+ :builds
+ {:app {:target     :browser
+        :output-dir "public/js"
+        :asset-path "/js"
+        :modules    {:core {:init-fn io.ianalytics.d4d.core/init!}}
+        :devtools   {:after-load io.ianalytics.d4d.core/reload!}
+        :release    {:compiler-options {:optimizations :simple}}}}}

@@ -1,0 +1,901 @@
+:root {
+  --color1: #121920;
+  --color2: #17212b;
+  --color3: #202c39;
+  --color4: #2d3c4b;
+  --color5: #4b6074;
+  --color6: #89a1b9;
+  --color7: #cddbea;
+  --color8: #eff4fa;
+  --color9: #ffffff;
+  --color10: #00dce4;
+  --color11: #0090da;
+  --gradient: linear-gradient(to right, #0090da, #00dce4);
+  --severity1: #f02353;
+  --severity2: #ffb100;
+  --severity3: #00b9ff;
+  --diagramm1: #d54073;
+  --diagramm2: #25a9db;
+  --diagramm3: #b76300;
+  --diagramm4: #78a21a;
+  --diagramm5: #5c6ce5;
+}
+
+* {
+  outline: none;
+}
+
+h1 {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 32pt;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 16pt;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12pt;
+  font-weight: 400;
+}
+
+h4,
+p {
+  font-family: "Roboto";
+  letter-spacing: 0.1em;
+  font-size: 9pt;
+  font-weight: 400;
+}
+
+p {
+}
+
+/*dark and light themes*/
+.bg-dark {
+  background-color: var(--color2);
+}
+
+.h1-dark,
+.h2-dark {
+  color: var(--color9);
+}
+
+.h3-dark,
+.h4-dark {
+  color: var(--color6);
+}
+
+.p-dark {
+  color: var(--color7);
+}
+
+.bg-light {
+  background-color: var(--color8);
+}
+
+.h1-light,
+.h2-light {
+  color: var(--color2);
+}
+
+.h3-light,
+.h4-light {
+  color: var(--color6);
+}
+
+.p-light {
+  color: var(--color4);
+}
+
+/****Buttons******/
+
+/*Primary button dark*/
+
+button {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  background: none;
+  border-style: solid;
+}
+
+.btn-primary-dark {
+  height: 48px;
+  margin: 32px;
+  padding: 0 28px;
+  border-radius: 24px;
+  font-family: "Raleway";
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  color: var(--color2);
+  background: var(--gradient);
+  box-shadow: 0px 4px 8px var(--color1);
+  border: 0;
+}
+
+.btn-primary-dark:hover {
+  box-shadow: 0px 8px 16px var(--color1);
+}
+
+.btn-primary-dark:active {
+  color: var(--color1);
+  background: var(--color10);
+  box-shadow: none;
+}
+
+.btn-primary-dark:disabled {
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+/*Secondary button dark*/
+
+.btn-secondary-dark {
+  height: 48px;
+  margin: 32px;
+  padding: 0 28px;
+  border-radius: 24px;
+  font-family: "Raleway";
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  color: var(--color10);
+  background: var(--color4);
+  border: none;
+}
+
+.btn-secondary-dark:hover {
+  color: var(--color7);
+  box-shadow: 0px 4px 8px var(--color1);
+}
+
+.btn-secondary-dark:active {
+  color: var(--color8);
+  box-shadow: none;
+}
+
+.btn-secondary-dark:disabled {
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+/*Tertiary Button*/
+
+.btn-tertiary-dark {
+  height: 48px;
+  margin: 32px;
+  padding: 0 24px;
+  border-radius: 24px;
+  font-size: 16px;
+  background: none;
+  color: var(--color10);
+  border: none;
+}
+
+.btn-tertiary-dark:hover {
+  color: var(--color7);
+  text-shadow: 0px 4px 8px var(--color1);
+}
+
+.btn-tertiary-dark:active {
+  color: var(--color8);
+  text-shadow: none;
+}
+
+.btn-tertiary-dark:disabled {
+  text-shadow: none;
+  opacity: 0.5;
+}
+
+.buttonSmall {
+  height: 32px;
+  margin: 15px;
+  padding: 0 16px;
+  font-size: 12px;
+}
+
+/*Primary button light*/
+
+.btn-primary-light {
+  height: 48px;
+  margin: 32px;
+  padding: 0 28px;
+  border-radius: 24px;
+  font-family: "Raleway";
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  color: var(--color2);
+  background: var(--gradient);
+  border: 0;
+}
+
+.btn-primary-light:hover {
+  box-shadow: 0px 1px 16px var(--color1);
+  /*opacity 0.5?*/
+}
+
+.btn-primary-light:active {
+  color: var(--color1);
+  background: var(--color10);
+  box-shadow: none;
+}
+
+.btn-primary-light:disabled {
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+/*Secondary button light*/
+
+.btn-secondary-light {
+  height: 48px;
+  margin: 32px;
+  padding: 0 28px;
+  border-radius: 24px;
+  font-family: "Raleway";
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  color: var(--color10);
+  background: var(--color4);
+  border: none;
+}
+
+.btn-secondary-light:hover {
+  color: var(--color6);
+  box-shadow: 0px 4px 8px var(--color1);
+}
+
+.btn-secondary-light:active {
+  color: var(--color8);
+  box-shadow: none;
+}
+
+.btn-secondary-light:disabled {
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+/*Tertiary light*/
+
+.btn-tertiary-light {
+  height: 48px;
+  margin: 32px;
+  padding: 0 24px;
+  border-radius: 24px;
+  font-size: 16px;
+  background: none;
+  color: var(--color10);
+  border: none;
+}
+
+.btn-tertiary-light:hover {
+  color: var(--color5);
+}
+
+.btn-tertiary-light:active {
+  color: var(--color4);
+  text-shadow: none;
+}
+
+.btn-tertiary-light:disabled {
+  text-shadow: none;
+  opacity: 0.5;
+}
+
+.buttonSmall {
+  height: 32px;
+  margin: 15px;
+  padding: 0 16px;
+  font-size: 12px;
+}
+
+/*Filter*/
+
+.filter-dark {
+  height: 32px;
+  text-transform: uppercase;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+  border-width: 1px; /*1 in guide*/
+  border-radius: 16px;
+  border-color: var(--color6);
+  color: var(--color6);
+  border-style: solid;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.filter-dark:hover {
+  color: var(--color7);
+  border-color: var(--color7);
+  box-shadow: 0px 4px 8px var(--color1);
+  text-shadow: 0px 4px 8px var(--color1);
+}
+
+.filter-dark:active {
+  color: var(--color8);
+  border-color: var(--color8);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.filter-dark:disabled {
+  opacity: 0.5;
+}
+
+.filter-light {
+  height: 32px;
+  text-transform: uppercase;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+  border-width: 1px; /*1 in guide*/
+  border-radius: 16px;
+  border-color: var(--color6);
+  color: var(--color6);
+  border-style: solid;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.filter-light:hover {
+  color: var(--color5);
+  border-color: var(--color5);
+}
+
+.filter-light:active {
+  color: var(--color8);
+  border-color: var(--color8);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.filter-light:disabled {
+  opacity: 0.5;
+}
+
+/*Filter Options*/
+
+.filter-options {
+  border: 1px solid var(--color6); /*1 in guide*/
+  border-radius: 16px;
+  display: inline-block;
+  height: 30px;
+}
+
+.filter-option-dark {
+  text-transform: uppercase;
+  height: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+
+  color: var(--color6);
+  font-family: "Raleway";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+}
+
+.filter-option-dark:hover {
+  color: var(--color7);
+  border-color: var(--color7);
+  text-shadow: 0px 4px 8px var(--color1);
+}
+
+.filter-option-dark:disabled {
+  text-shadow: none;
+  opacity: 0.5;
+}
+
+.filter-option-light {
+  text-transform: uppercase;
+  height: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+  color: var(--color6);
+  font-family: "Raleway";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+}
+
+.filter-option-light:hover {
+  color: var(--color5);
+  border-color: var(--color5);
+}
+
+.filter-option-light:disabled {
+  text-shadow: none;
+  opacity: 0.5;
+}
+
+.option-selected-dark {
+  color: var(--color10);
+  border-width: 2px; /*1 in guide*/
+  border-radius: 16px;
+  border-color: var(--color10);
+  border-style: solid;
+  text-transform: uppercase;
+
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+
+  font-size: 12px;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.option-selected-light {
+  color: var(--color11);
+  border-width: 2px; /*1 in guide*/
+  border-radius: 16px;
+  border-color: var(--color11);
+  border-style: solid;
+  text-transform: uppercase;
+
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+
+  font-size: 12px;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/*Tab-Navigation*/
+
+.tab-dark {
+  font-size: 12px;
+  margin: 0px;
+  color: var(--color6);
+  border-color: var(--color4);
+  border-bottom: 3px solid var(--color5);
+  border-radius: 0;
+}
+
+.tab-dark:hover {
+  color: var(--color7);
+  text-shadow: 0px 4px 8px var(--color1);
+}
+
+.tab-dark:active {
+  color: var(--color8);
+  text-shadow: none;
+}
+
+.tab-checked-dark {
+  color: var(--color8);
+  text-shadow: none;
+  border-image-source: var(--gradient);
+  border-image-slice: 2;
+}
+
+.tab-light {
+  font-size: 12px;
+  margin: 0px;
+  color: var(--color6);
+  border-color: var(--color4);
+  border-bottom: 3px solid var(--color5);
+  border-radius: 0;
+}
+
+.tab-light:hover {
+  color: var(--color2);
+}
+
+.tab-light:active {
+  color: var(--color2);
+  text-shadow: none;
+}
+
+.tab-checked-light {
+  color: var(--color5);
+  text-shadow: none;
+  border-image-source: var(--gradient);
+  border-image-slice: 2;
+}
+
+.tab-checked-light:hover {
+  text-shadow: none !important;
+}
+
+/*Input*/
+
+.input-dark {
+  padding: 16px;
+  margin: 16px;
+  font-size: 16px;
+  border: 0;
+  border-bottom: 2px solid var(--color6);
+  background-color: var(--color2);
+  color: var(--color6);
+}
+
+.input-dark:hover {
+  color: var(--color7);
+  border-color: var(--color7);
+  text-shadow: 0px 4px 8px var(--color1);
+}
+
+.input-dark:active,
+.input-dark:focus {
+  color: var(--color8);
+  text-shadow: none;
+  border-color: var(--color10);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: var(--color10);
+}
+
+.input-dark:checked {
+  color: var(--color8);
+  text-shadow: none;
+}
+
+.input-light {
+  padding: 16px;
+  margin: 16px;
+  font-size: 16px;
+  border: 0;
+  border-bottom: 2px solid var(--color6);
+  background-color: var(--color8);
+  color: var(--color6);
+}
+
+.input-light:hover {
+  color: var(--color2);
+  border-color: var(--color2);
+}
+
+.input-light:active,
+input:focus {
+  color: var(--color2);
+  text-shadow: none;
+  border-color: var(--color10);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: var(--color10);
+}
+
+.input-light:checked {
+  color: var(--color2);
+  text-shadow: none;
+}
+
+/*Checkbox*/
+
+/* Styling Checkbox Starts */
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.checkbox-element {
+  margin: 8px;
+}
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 24px;
+  height: 24px;
+  width: 24px;
+  color: white;
+  clear: both;
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  border: 2px solid var(--color6);
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  border: 2px solid var(--color6);
+}
+
+.checkbox-label .checkbox-custom::after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 12px;
+  height: 0px;
+  width: 0px;
+  border-radius: 5px;
+  border: solid #009bff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg) scale(0);
+  -ms-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+  opacity: 1;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid var(--color10);
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .btn-primary-dark {
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+/*Google Fonts Offline*/
+
+/* roboto-100 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+    url("fonts/roboto-v20-latin-100.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./fonts/roboto-v20-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-100italic - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 100;
+  src: local("Roboto Thin Italic"), local("Roboto-ThinItalic"),
+    url("fonts/roboto-v20-latin-100italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./fonts/roboto-v20-latin-100italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./fonts/roboto-v20-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300italic - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Roboto Light Italic"), local("Roboto-LightItalic"),
+    url("fonts/roboto-v20-latin-300italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/roboto-v20-latin-300italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-italic - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Roboto Italic"), local("Roboto-Italic"),
+    url("fonts/roboto-v20-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/roboto-v20-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("fonts/roboto-v20-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/roboto-v20-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500italic - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"),
+    url("fonts/roboto-v20-latin-500italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/roboto-v20-latin-500italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("fonts/roboto-v20-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/roboto-v20-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700italic - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"),
+    url("fonts/roboto-v20-latin-700italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/roboto-v20-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("fonts/roboto-v20-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/roboto-v20-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-900italic - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 900;
+  src: local("Roboto Black Italic"), local("Roboto-BlackItalic"),
+    url("fonts/roboto-v20-latin-900italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/roboto-v20-latin-900italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* raleway-100 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100;
+  src: local(""), url("fonts/raleway-v18-latin-100.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/raleway-v18-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-200 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 200;
+  src: local(""), url("fonts/raleway-v18-latin-200.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/raleway-v18-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-300 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("fonts/raleway-v18-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/raleway-v18-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-regular - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("fonts/raleway-v18-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/raleway-v18-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-500 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("fonts/raleway-v18-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/raleway-v18-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-600 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("fonts/raleway-v18-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/raleway-v18-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-700 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("fonts/raleway-v18-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/raleway-v18-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-800 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("fonts/raleway-v18-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/raleway-v18-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-900 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("fonts/raleway-v18-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/raleway-v18-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
